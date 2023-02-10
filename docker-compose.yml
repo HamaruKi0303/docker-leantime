@@ -32,7 +32,7 @@ services:
       - public_userfiles:/var/www/html/public/userfiles
       - userfiles:/var/www/html/userfiles
     ports:
-      - "8080:80"                                                       # The port to expose and access Leantime
+      - "80:80"                                                       # The port to expose and access Leantime
     depends_on:
       - leantime_db                                                     # Don't start Leantime unless leantime_db is running
 
